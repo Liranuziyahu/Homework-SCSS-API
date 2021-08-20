@@ -1,0 +1,45 @@
+h1 {
+  color: red;
+  margin-left: 240px;
+}
+
+#send {
+  width: 300px;
+  height: 125px;
+  border-radius: 24px;
+  background-color: green;
+  font-size: 2rem;
+  font-weight: 800;
+}
+#send:hover {
+  color: white;
+}
+#send::after {
+  content: "Send";
+}
+
+#remove {
+  width: 300px;
+  height: 125px;
+  border-radius: 24px;
+  background-color: red;
+  font-size: 2rem;
+  font-weight: 800;
+}
+#remove:hover {
+  color: white;
+}
+#remove::after {
+  content: "Remove";
+}
+
+#circle, #circle2 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: purple;
+}
+
+/*# sourceMappingURL=style.scss.map */
+
+/*# sourceMappingURL=style.css.map */

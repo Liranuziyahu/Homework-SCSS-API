@@ -1,0 +1,54 @@
+@import "./var.scss";
+ 
+
+h1{
+  color: $alertColor;
+  margin-left: 240px;
+}
+
+#send{
+    width: 300px;
+    height: 125px;
+    border-radius: 24px;
+    background-color: $successColor;
+    font-size: 2rem;
+    font-weight: 800;
+    &:hover{
+        color: white;
+    }
+    &::after{
+        content: 'Send';
+    }
+
+}
+#remove{
+    width: 300px;
+    height: 125px;
+    border-radius: 24px;
+    background-color: $alertColor;
+    font-size: 2rem;
+    font-weight: 800;
+    &:hover{
+        color: white;
+    }
+    &::after{
+        content: 'Remove';
+    }
+
+}
+
+@mixin tamplet {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: purple;  
+    } 
+#circle{
+    @include tamplet()              //include imports from from the 'tamplet'
+
+}
+#circle2
+{
+    @extend #circle;                //extend - copy the selector
+}
+/*# sourceMappingURL=style.scss.map */
